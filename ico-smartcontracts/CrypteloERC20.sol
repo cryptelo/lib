@@ -35,21 +35,21 @@ contract CrypteloERC20 {
         name = "CRL";
         symbol = "CRL";
         decimals = 8;
-        totalSupply = 500000000;
-        totalSupplyICO = 150000000;
-        totalSupplyPrivateSale = 100000000;
-        totalSupplyTeamTokens = 125000000;
-        totalSupplyExpansionTokens = 125000000;
+        totalSupply = 500000000 * ( 10 ** decimals);
+        totalSupplyICO = 150000000 * ( 10 ** decimals);
+        totalSupplyPrivateSale = 100000000 * ( 10 ** decimals);
+        totalSupplyTeamTokens = 125000000 * ( 10 ** decimals);
+        totalSupplyExpansionTokens = 125000000 * ( 10 ** decimals);
 
         address privateW = 0x2F2Aed5Bb8D2b555C01f143Ec32F6869581b0053;
         address ICOW = 0x163Eae60A768f12ff94d4d631B563DB04aEF7A57;
         address companyW = 0x3AF0511735C5150f0E025B8fFfDc0bD86985DFd5;
         address expansionW = 0x283872929a79C86efCf76198f15A3abE0856dCD7;
 
-        balanceOf[ICOW] = totalSupplyICO * ( 10 ** decimals);
-        balanceOf[privateW] = totalSupplyPrivateSale * ( 10 ** decimals);
-        balanceOf[companyW] = totalSupplyTeamTokens * ( 10 ** decimals);
-        balanceOf[expansionW] = totalSupplyExpansionTokens * ( 10 ** decimals);
+        balanceOf[ICOW] = totalSupplyICO ;
+        balanceOf[privateW] = totalSupplyPrivateSale;
+        balanceOf[companyW] = totalSupplyTeamTokens;
+        balanceOf[expansionW] = totalSupplyExpansionTokens;
     }
 
     /**
